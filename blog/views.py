@@ -9,3 +9,5 @@ class BlogView(View):
             'blogs': blogs
         }
         return render(request, 'main/blog.html', context)
+
+

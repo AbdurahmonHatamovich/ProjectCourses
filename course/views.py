@@ -8,7 +8,7 @@ class CourseListView(View):
         context = {
             'courses': courses,
         }
-        return render(request, 'main/teacher.html',context)
+        return render(request, 'main/course.html',context)
 
 
 class TeacherListView(View):

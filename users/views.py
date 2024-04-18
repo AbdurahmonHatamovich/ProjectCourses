@@ -15,5 +15,5 @@ class LandingView(View):
             'teachers': teachers,
             'blogs': blogs,
         }
-        return render(request, 'main/course.html',context)
+        return render(request, 'main/index.html',context)
 
