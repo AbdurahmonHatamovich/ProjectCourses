@@ -18,7 +18,7 @@ class Course(models.Model):
     active_users = models.PositiveIntegerField(default=0)
     price = models.FloatField(default=0)
     price_type = models.CharField(max_length=20, choices=PriceType.choices,default=PriceType.UZS)
-    rating = models.FloatField(default=0)
+    rating = models.FloatField(null=True)
     speciality = models.ManyToManyField(Speciality)
     create_date = models.DateTimeField(auto_now=True)
     last_update_date = models.DateTimeField(auto_now_add=True)
